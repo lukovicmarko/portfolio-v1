@@ -1,0 +1,11 @@
+.divider{
+    display: flex;   
+    align-items: center;
+    &-line{
+        width: 15px;
+        height: 2px;
+        margin: 0 15px 8px 0;
+        background-color: $grey-color;
+    }
+}
+

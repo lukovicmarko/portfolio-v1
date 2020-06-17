@@ -1,20 +1,14 @@
-.page-section{   
+.about-section{   
     height: 100vh;    
     background-color: $dark-grey;
     z-index: -10;
-    position: relative;
-       
-    &-heading{      
-        margin:0 !important;
-        color: $text-active-color;
-        font-weight: 600;
-        letter-spacing: 2px;
-        }
+    position: relative;    
 
         .skills{
             p{
                 font-family: "SF Mono";
                 font-size: 15px;
+                color: $grey-color;
                 margin: 0 !important;
                 padding-bottom: 13px;
                 &::before {                   
@@ -52,20 +46,9 @@
 
 }
 
-.divider{
-    display: flex;   
-    align-items: center;
-    &-line{
-        width: 15px;
-        height: 2px;
-        margin: 0 15px 8px 0;
-        background-color: $grey-color;
-    }
-}
-
 
 @media(max-width: 768px) {  
-    .page-section{
+    .about-section{
         height: 100%;
         padding: 4rem 0;
         .image-container{

@@ -107,44 +107,38 @@ header.masthead .fa-arrow-right {
   }
 }
 
-.page-section {
+.about-section {
   height: 100vh;
   background-color: #252734;
   z-index: -10;
   position: relative;
 }
 
-.page-section-heading {
-  margin: 0 !important;
-  color: #EAEBEC;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.page-section .skills p {
+.about-section .skills p {
   font-family: "SF Mono";
   font-size: 15px;
+  color: #8892b0;
   margin: 0 !important;
   padding-bottom: 13px;
 }
 
-.page-section .skills p::before {
+.about-section .skills p::before {
   content: "▹";
   color: #EAEBEC;
   font-size: 1rem;
   margin-right: 0.5rem;
 }
 
-.page-section .image-container {
+.about-section .image-container {
   position: relative;
 }
 
-.page-section .image-container .profile {
+.about-section .image-container .profile {
   width: 300px;
   border-radius: 3px;
 }
 
-.page-section .image-container::before {
+.about-section .image-container::before {
   border: 3px solid #ffc25c;
   border-radius: 3px;
   display: inline-block;
@@ -157,6 +151,139 @@ header.masthead .fa-arrow-right {
   z-index: -1;
   -webkit-transform: translate3d(26px, 26px, -26px);
           transform: translate3d(26px, 26px, -26px);
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    height: 100%;
+    padding: 4rem 0;
+  }
+  .about-section .image-container {
+    margin-top: 2rem;
+  }
+}
+
+#experience ul {
+  padding: 50px 0;
+}
+
+#experience ul li {
+  list-style: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+#experience ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+#experience ul li:nth-child(odd) div {
+  left: 40px;
+  -webkit-transform: translate(200px, 0);
+          transform: translate(200px, 0);
+}
+
+#experience ul li:nth-child(even) div {
+  left: -434px;
+  -webkit-transform: translate(-200px, 0);
+          transform: translate(-200px, 0);
+}
+
+#experience ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #252734 transparent transparent;
+}
+
+#experience ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #252734;
+}
+
+#experience ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 1rem;
+  background-color: #252734;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#experience ul li div:before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#experience ul li div h3 {
+  color: #8892b0;
+}
+
+#experience ul li.show div {
+  -webkit-transform: none;
+          transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+#experience ul li.show:after {
+  background: #252734;
+}
+
+@media (max-width: 900px) {
+  #experience ul li div {
+    width: 250px;
+  }
+  #experience ul li:nth-child(even) div {
+    left: -284px;
+  }
+  #experience ul li:nth-child(even) div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #252734 transparent transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  #experience ul li {
+    margin-left: 20px;
+  }
+  #experience ul li:nth-child(even) div {
+    left: 40px;
+  }
+  #experience ul li div {
+    width: calc(100vw - 90px);
+  }
+}
+
+.heading {
+  margin: 0 !important;
+  color: #EAEBEC;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .divider {
@@ -173,16 +300,6 @@ header.masthead .fa-arrow-right {
   height: 2px;
   margin: 0 15px 8px 0;
   background-color: #8892b0;
-}
-
-@media (max-width: 768px) {
-  .page-section {
-    height: 100%;
-    padding: 4rem 0;
-  }
-  .page-section .image-container {
-    margin-top: 2rem;
-  }
 }
 
 span.wave {
