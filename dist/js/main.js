@@ -39,7 +39,7 @@ window.addEventListener('scroll', run);
 
 
 // Smooth Scrolling
-$('#mainNav li a').on('click', function (event) {
+$('#mainNav li a, .button').on('click', function (event) {
 
     if (this.hash !== '') {
         event.preventDefault();

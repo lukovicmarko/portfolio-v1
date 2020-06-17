@@ -91,6 +91,10 @@ header.masthead .introduction {
   font-family: 'Calibre';
 }
 
+header.masthead .button {
+  text-decoration: none !important;
+}
+
 header.masthead .fa-arrow-right {
   color: #ffc25c;
   padding-bottom: 5px;
