@@ -1,0 +1,75 @@
+.page-section{   
+    height: 100vh;    
+    background-color: $dark-grey;
+    z-index: -10;
+    position: relative;
+       
+    &-heading{      
+        margin:0 !important;
+        color: $text-active-color;
+        font-weight: 600;
+        letter-spacing: 2px;
+        }
+
+        .skills{
+            p{
+                font-family: "SF Mono";
+                font-size: 15px;
+                margin: 0 !important;
+                padding-bottom: 13px;
+                &::before {                   
+                    content: "▹";          
+                    color: $text-active-color;
+                    font-size: 1rem;              
+                    margin-right: 0.5rem;                
+                }
+            }
+        }
+    
+        .image-container{
+            position: relative;      
+                            
+                .profile{
+                    width: 300px;
+                    border-radius: 3px;            
+                }        
+                
+            &::before {
+                border: 3px solid $yellow-color;
+                border-radius: 3px;
+                display: inline-block;
+                position: absolute;
+                content: '';
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                transform: translate3d(26px, 26px, -26px);
+            }    
+       
+    }    
+
+}
+
+.divider{
+    display: flex;   
+    align-items: center;
+    &-line{
+        width: 15px;
+        height: 2px;
+        margin: 0 15px 8px 0;
+        background-color: $grey-color;
+    }
+}
+
+
+@media(max-width: 768px) {  
+    .page-section{
+        height: 100%;
+        padding: 4rem 0;
+        .image-container{
+            margin-top: 2rem;
+        }
+    } 
+}

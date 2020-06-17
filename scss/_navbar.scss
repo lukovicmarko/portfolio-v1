@@ -1,0 +1,27 @@
+#mainNav {
+    img{
+        width:60px;
+        height: 60px;
+        text-transform: uppercase;
+        color:#ffffff;
+    }
+    .nav-item{
+        padding-right: 3rem;
+        .nav-link{          
+            color: $text-color;
+            font-size: 1.5rem;  
+            padding: 0 !important;
+            border-bottom: 3px transparent solid;
+            transition: border-color 0.5s;
+            font-family: 'SF Mono';
+            &:hover{
+                border-color: $yellow-color;
+                color: #ffffff;
+            }  
+        }
+    }
+
+    .active{
+        color:#ffffff !important;
+    }   
+}
