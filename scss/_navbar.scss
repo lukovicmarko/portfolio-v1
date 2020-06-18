@@ -1,5 +1,6 @@
 #mainNav {
     padding-top: 2rem;
+    display: none;
     img{
         width:60px;
         height: 60px;
@@ -25,4 +26,11 @@
     .active{
         color:#ffffff !important;
     }   
+}
+
+
+@media(max-width:600px){
+    #mainNav {
+        display: block;
+    }
 }
