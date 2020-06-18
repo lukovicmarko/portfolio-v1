@@ -1,4 +1,8 @@
 @charset "UTF-8";
+#mainNav {
+  padding-top: 2rem;
+}
+
 #mainNav img {
   width: 60px;
   height: 60px;
@@ -324,6 +328,14 @@ header.masthead .fa-arrow-right {
   }
 }
 
+.contact {
+  height: 80vh;
+}
+
+.contact .email {
+  color: #ffc25c;
+}
+
 .heading {
   margin: 0 !important;
   color: #EAEBEC;
@@ -489,7 +501,6 @@ body {
 
 h1 {
   font-weight: bold;
-  font-size: 80px;
   line-height: 1.1;
 }
 
@@ -497,7 +508,7 @@ a {
   color: #999aa2;
 }
 
-a a:hover, a a:visited {
+a a:hover, a a:active, a a:focus, a a:visited {
   color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

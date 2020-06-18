@@ -4,8 +4,9 @@
 @import 'about';
 @import 'experience';
 @import 'portfolio';
-@import '_heading';
-@import '_divider';
+@import 'contact';
+@import 'heading';
+@import 'divider';
 @import 'animation';
 @import 'social-buttons';
 
@@ -45,14 +46,14 @@ body {
 
 h1{    
     font-weight: bold;
-    font-size: 80px;
+    // font-size: 80px;
     line-height: 1.1;
 }
 
 a{
     color:$text-color;
     
-    a:hover,a:visited{
+    a:hover,a:active,a:focus,a:visited{
         color:#ffffff;
     }
 }
