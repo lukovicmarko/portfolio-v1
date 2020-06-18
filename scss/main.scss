@@ -3,7 +3,7 @@
 @import 'header';
 @import 'about';
 @import 'experience';
-// @import 'utils';
+@import 'portfolio';
 @import '_heading';
 @import '_divider';
 @import 'animation';
@@ -46,4 +46,12 @@ h1{
     font-weight: bold;
     font-size: 80px;
     line-height: 1.1;
+}
+
+a{
+    color:$text-color;
+    
+    a:hover,a:visited{
+        color:#ffffff;
+    }
 }

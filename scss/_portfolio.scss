@@ -1,0 +1,36 @@
+.portfolio{
+    padding: 3rem 0;
+    background-color: $dark-grey;
+    &-item{
+        background-color: $grey-color-light;
+        border-radius: 3px;
+        height: 350px;
+        transition: all .2s;
+
+        &:hover{
+            transform: translateY(-7px);           
+        }
+
+        &-caption{
+            height: 80%;
+        }
+    }
+}
+
+.fa-external-link-alt,.fa-github{
+    &:hover{
+        color:white;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:600px){
+    .portfolio{
+        &-item{           
+            height: 450px;
+        }
+    }    
+}
+
+

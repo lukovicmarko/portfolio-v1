@@ -16,12 +16,14 @@ header.masthead {
             margin: 1rem 0 3rem 0;
             font-family: 'Calibre';
             color: $text-active-color;
+
             &::after{
                 content: '';
                 display: block;
-                width: 12%;
+                width: 0%;
                 height: 10px;
-                background: $yellow-color;          
+                background: $yellow-color;   
+                animation: underline-animation 1.5s forwards ease-in-out;
             }        
         }
 
@@ -30,6 +32,7 @@ header.masthead {
             border-bottom: 3px transparent solid;
             transition: border-color 0.5s;
             margin-top: 10rem;
+            
             &:hover{           
                 color: $yellow-color;
                 border-bottom: 3px solid $yellow-color;

@@ -53,9 +53,11 @@ header.masthead .masthead-heading {
 header.masthead .masthead-heading::after {
   content: '';
   display: block;
-  width: 12%;
+  width: 0%;
   height: 10px;
   background: #ffc25c;
+  -webkit-animation: underline-animation 1.5s forwards ease-in-out;
+          animation: underline-animation 1.5s forwards ease-in-out;
 }
 
 header.masthead .masthead-link {
@@ -142,7 +144,7 @@ header.masthead .fa-arrow-right {
   border-radius: 3px;
 }
 
-.about-section .image-container::before {
+.about-section .image-container:before {
   border: 3px solid #ffc25c;
   border-radius: 3px;
   display: inline-block;
@@ -165,6 +167,10 @@ header.masthead .fa-arrow-right {
   .about-section .image-container {
     margin-top: 2rem;
   }
+}
+
+#experience {
+  padding: 3rem 0;
 }
 
 #experience ul {
@@ -283,6 +289,41 @@ header.masthead .fa-arrow-right {
   }
 }
 
+.portfolio {
+  padding: 3rem 0;
+  background-color: #252734;
+}
+
+.portfolio-item {
+  background-color: #424657;
+  border-radius: 3px;
+  height: 350px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.portfolio-item:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.portfolio-item-caption {
+  height: 80%;
+}
+
+.fa-external-link-alt:hover, .fa-github:hover {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .portfolio-item {
+    height: 450px;
+  }
+}
+
 .heading {
   margin: 0 !important;
   color: #EAEBEC;
@@ -388,6 +429,18 @@ span.wave {
   }
 }
 
+@-webkit-keyframes underline-animation {
+  to {
+    width: 12%;
+  }
+}
+
+@keyframes underline-animation {
+  to {
+    width: 12%;
+  }
+}
+
 @font-face {
   font-family: 'Calibre';
   src: url("../dist/fonts/Calibre/Calibre-Regular.woff2") format("woff2"), url("dist/fonts/Calibre/Calibre-Regular.woff") format("woff"), url("../dist/fonts/Calibre/Calibre-Regular.ttf") format("truetype");
@@ -421,5 +474,13 @@ h1 {
   font-weight: bold;
   font-size: 80px;
   line-height: 1.1;
+}
+
+a {
+  color: #999aa2;
+}
+
+a a:hover, a a:visited {
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
