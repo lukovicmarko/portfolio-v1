@@ -105,8 +105,7 @@
         ul{
             li{
                 div{
-                    width:250px;      
-                   
+                    width: 250px;      
                 }
 
                 &:nth-child(even) {
@@ -126,7 +125,7 @@
     }
 }
 
-@media(max-width:600px){
+@media(max-width:600px){  
     #experience{
         ul{
             li{ 
@@ -137,7 +136,7 @@
                 }
 
                 div{
-                    width:calc(100vw - 90px);
+                    width: calc(100vw - 90px);
                 }
             } 
         }

@@ -30,7 +30,7 @@
 }
 
 header.masthead {
-  padding-top: 10.5rem;
+  padding-top: 8rem;
   height: 100vh;
 }
 
@@ -65,7 +65,7 @@ header.masthead .masthead-link {
   border-bottom: 3px transparent solid;
   -webkit-transition: border-color 0.5s;
   transition: border-color 0.5s;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 header.masthead .masthead-link:hover {
@@ -88,7 +88,7 @@ header.masthead h3 {
 
 header.masthead .introduction {
   color: #8892b0;
-  margin: 2rem 0 6rem 0;
+  margin-top: 2rem;
   width: 500px;
   font-family: 'Calibre';
 }
@@ -439,6 +439,23 @@ span.wave {
   to {
     width: 12%;
   }
+}
+
+.social-buttons {
+  margin-top: 6rem;
+}
+
+.social-buttons i {
+  margin-right: 2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.social-buttons i:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @font-face {
