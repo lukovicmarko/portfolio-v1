@@ -1,13 +1,8 @@
-const linkClicked = document.getElementsByClassName('nav-item');
-const numClass = linkClicked.length;
-
-for (let i = 0; i < numClass; i++) {
-    linkClicked[i].addEventListener('click', function () {
-        const onTheMoment = document.getElementsByClassName('active');
-        onTheMoment[0].className = onTheMoment[0].className.replace(' active', '');
-        this.className += ' active';
-    }, false);
-}
+//added active class to vertical navigation
+$('.nav .nav-item').click(function () {
+    $('.nav .nav-item').removeClass('active');
+    $(this).addClass('active');
+})
 
 
 //experience animation
