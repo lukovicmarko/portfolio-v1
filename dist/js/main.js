@@ -1,4 +1,4 @@
-const linkClicked = document.getElementsByClassName('nav-link');
+const linkClicked = document.getElementsByClassName('nav-item');
 const numClass = linkClicked.length;
 
 for (let i = 0; i < numClass; i++) {
@@ -39,7 +39,7 @@ window.addEventListener('scroll', run);
 
 
 // Smooth Scrolling
-$('#mainNav li a, .button').on('click', function (event) {
+$('#vertical-nav li a, .button').on('click', function (event) {
 
     if (this.hash !== '') {
         event.preventDefault();
@@ -54,3 +54,4 @@ $('#mainNav li a, .button').on('click', function (event) {
         );
     }
 });
+
