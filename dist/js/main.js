@@ -1,6 +1,6 @@
 //added active class to vertical navigation
-$('.nav .nav-item').click(function () {
-    $('.nav .nav-item').removeClass('active');
+$('.nav .nav-link').click(function () {
+    $('.nav .nav-link').removeClass('active');
     $(this).addClass('active');
 })
 
@@ -50,3 +50,4 @@ $('#vertical-nav li a, .button').on('click', function (event) {
     }
 });
 
+$('body').scrollspy({ target: '#vertical-nav' })
