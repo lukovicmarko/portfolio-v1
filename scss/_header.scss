@@ -1,6 +1,6 @@
 // Styling for the masthead
 header.masthead {
-    padding: 0 5rem 0 20rem;
+    padding: 0 5rem 0 15rem;
     height: 100vh; 
         .masthead-subheading {
             font-size: 1.3rem;        
@@ -57,7 +57,7 @@ header.masthead {
             .introduction-subtitle{
                 color: $grey-color;
                 margin-top: 2rem;
-                width: 500px;
+                width: 400px;
                 font-family: 'Calibre';      
     
             }
@@ -81,8 +81,20 @@ header.masthead {
         padding: 4rem 0;     
         height: 100%;
         .introduction{
-            margin-top: 4em;        
+            margin-top: 4rem;
+                
         }            
     }     
+    
+    #introduction-subtitle{
+        width: 370px;       
+        margin-right: 0 !important;;
+    }  
+}
+
+@media(max-width: 900px) {  
+    header.masthead {
+        padding: 0 1rem;
+    }
 }
 

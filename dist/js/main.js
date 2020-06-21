@@ -1,9 +1,3 @@
-//added active class to vertical navigation
-$('.nav .nav-link').click(function () {
-    $('.nav .nav-link').removeClass('active');
-    $(this).addClass('active');
-})
-
 
 //experience animation
 const items = document.querySelectorAll('#experience li');
@@ -34,7 +28,7 @@ window.addEventListener('scroll', run);
 
 
 // Smooth Scrolling
-$('#vertical-nav li a, .button').on('click', function (event) {
+$('#vertical-nav li a,#mainNav li a, .button').on('click', function (event) {
 
     if (this.hash !== '') {
         event.preventDefault();

@@ -29,15 +29,24 @@
 }
 
 
-@media(max-width:600px){
+@media(max-width: 600px){
     #mainNav {
         display: block;
+        .nav-item{
+          padding-top: 1rem;
+          .nav-link{
+            border:none;            
+          }
+        }
     }
 }
 
 @media(max-width: 900px){
   #vertical-nav {
       display: none;
+  }
+  #mainNav {
+    display: block;
   }
 }
 

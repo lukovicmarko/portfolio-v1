@@ -38,20 +38,11 @@
   #mainNav {
     display: block;
   }
-  #mainNav .nav-item {
-    padding-top: 1rem;
-  }
-  #mainNav .nav-item .nav-link {
-    border: none;
-  }
 }
 
 @media (max-width: 900px) {
   #vertical-nav {
     display: none;
-  }
-  #mainNav {
-    display: block;
   }
 }
 
@@ -180,7 +171,7 @@
 }
 
 header.masthead {
-  padding: 0 5rem 0 15rem;
+  padding: 0 5rem 0 20rem;
   height: 100vh;
 }
 
@@ -239,7 +230,7 @@ header.masthead h3 {
 header.masthead .introduction .introduction-subtitle {
   color: #8892b0;
   margin-top: 2rem;
-  width: 400px;
+  width: 500px;
   font-family: 'Calibre';
 }
 
@@ -263,12 +254,6 @@ header.masthead .fa-arrow-right {
   #introduction-subtitle {
     width: 370px;
     margin-right: 0 !important;
-  }
-}
-
-@media (max-width: 900px) {
-  header.masthead {
-    padding: 0 1rem;
   }
 }
 
@@ -328,24 +313,8 @@ header.masthead .fa-arrow-right {
   }
 }
 
-@media (min-width: 900px) {
-  .about-section {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .about-section {
-    padding: 0 0 0 15rem;
-  }
-}
-
 #experience {
   padding: 3rem 0;
-}
-
-#experience .divider {
-  margin-left: 15rem !important;
 }
 
 #experience ul {
@@ -390,14 +359,14 @@ header.masthead .fa-arrow-right {
   left: -434px;
 }
 
-#experience ul li:after {
+#experience ul li::after {
   content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
   width: 25px;
   height: 25px;
-  background-color: #252734;
+  background-color: inherit;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50%;
@@ -417,10 +386,16 @@ header.masthead .fa-arrow-right {
   border-color: transparent transparent transparent #252734;
 }
 
-@media (max-width: 600px) {
-  #experience .divider {
-    margin-left: 0 !important;
+@media (max-width: 900px) {
+  #experience ul li div {
+    width: 250px;
   }
+  #experience ul li:nth-child(even) div {
+    left: -284px;
+  }
+}
+
+@media (max-width: 600px) {
   #experience ul li {
     margin-left: 20px;
   }
@@ -437,33 +412,15 @@ header.masthead .fa-arrow-right {
   }
 }
 
-@media (max-width: 900px) {
-  #experience ul li div {
-    width: 250px;
-  }
-  #experience ul li:nth-child(even) div {
-    left: -284px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #experience ul li div {
-    width: 350px;
-  }
-  #experience ul li:nth-child(even) div {
-    left: -384px;
-  }
-}
-
 .portfolio {
-  padding: 3rem 15rem;
+  padding: 3rem 0;
   background-color: #252734;
 }
 
 .portfolio-item {
   background-color: #424657;
   border-radius: 3px;
-  height: 450px;
+  height: 350px;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -485,18 +442,6 @@ header.masthead .fa-arrow-right {
 }
 
 @media (max-width: 600px) {
-  .portfolio {
-    padding: 3rem 0;
-  }
-  .portfolio-item {
-    height: 350px;
-  }
-}
-
-@media (max-width: 900px) {
-  #portfolio {
-    padding: 2rem 1rem;
-  }
   .portfolio-item {
     height: 350px;
   }
@@ -646,21 +591,21 @@ span.wave {
 
 @font-face {
   font-family: 'Calibre';
-  src: url("../dist/fonts/Calibre/Calibre-Regular.woff2") format("woff2"), url("dist/fonts/Calibre/Calibre-Regular.woff") format("woff"), url("../dist/fonts/Calibre/Calibre-Regular.ttf") format("truetype");
+  src: url("../fonts/Calibre/Calibre-Regular.woff2") format("woff2"), url("../fonts/Calibre/Calibre-Regular.woff") format("woff"), url("../fonts/Calibre/Calibre-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Calibre';
-  src: url("../dist/fonts/Calibre/Calibre-Semibold.woff2") format("woff2"), url("dist/fonts/Calibre/Calibre-SemiBold.woff") format("woff"), url("dist/fonts/Calibre/Calibre-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Calibre/Calibre-Semibold.woff2") format("woff2"), url("../fonts/Calibre/Calibre-SemiBold.woff") format("woff"), url("../fonts/Calibre/Calibre-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SF Mono';
-  src: url("../dist/fonts/SFMono/SFMono-Regular.woff2") format("woff2"), url("dist/fonts/SFMono/SFMono-Regular.woff") format("woff");
+  src: url("../fonts/SFMono/SFMono-Regular.woff2") format("woff2"), url("../fonts/SFMono/SFMono-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -684,6 +629,6 @@ a {
 }
 
 a a:hover, a a:active, a a:focus, a a:visited {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
