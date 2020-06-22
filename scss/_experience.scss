@@ -2,7 +2,7 @@
     padding: 3rem 0;
     
     .divider{
-        margin-left: 15rem !important;
+        margin-left: 10rem !important;
     }
 
     ul{
@@ -88,6 +88,7 @@
 
 @media(max-width:600px){  
     #experience{
+        padding: 3rem 0;
         .divider{
             margin-left: 0 !important;
         }
@@ -117,38 +118,11 @@
 }
 
 
-
-@media(max-width: 900px){
-    #experience{
-        ul{
-            li{
-                div{
-                    width: 250px;      
-                }
-
-                &:nth-child(even) {
-                    div{
-                        left:-284px;
-                    }
-                }
-              
-            }
-        }
-    }
-}
-
-
-@media(min-width:1024px){
-    #experience{      
-        ul {
-            li{
-                div{
-                    width: 350px;
-                }
-                &:nth-child(even) div{
-                    left: -384px;             
-                }
-            }
-        }
+@media(min-width:1280px){
+    #experience{             
+        padding: 3rem 0;   
+        .divider{
+            margin-left: 15rem !important;
+        }    
     }    
 }

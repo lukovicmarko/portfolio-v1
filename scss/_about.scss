@@ -57,15 +57,9 @@
     } 
 }
 
-@media(min-width: 900px) {  
-    .about-section{          
-        padding: 0 1rem;
-    }      
-}
 
-
-@media(min-width:1024px){
+@media(min-width:1280px){
     .about-section{      
-        padding: 0 0 0 15rem;
+        padding-left: 15rem;
     }    
 }

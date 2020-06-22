@@ -261,14 +261,8 @@ header.masthead .fa-arrow-right {
     margin-top: 4rem;
   }
   #introduction-subtitle {
-    width: 370px;
-    margin-right: 0 !important;
-  }
-}
-
-@media (max-width: 900px) {
-  header.masthead {
-    padding: 0 1rem;
+    width: 320px;
+    margin: 0 !important;
   }
 }
 
@@ -328,15 +322,9 @@ header.masthead .fa-arrow-right {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .about-section {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .about-section {
-    padding: 0 0 0 15rem;
+    padding-left: 15rem;
   }
 }
 
@@ -345,7 +333,7 @@ header.masthead .fa-arrow-right {
 }
 
 #experience .divider {
-  margin-left: 15rem !important;
+  margin-left: 10rem !important;
 }
 
 #experience ul {
@@ -418,6 +406,9 @@ header.masthead .fa-arrow-right {
 }
 
 @media (max-width: 600px) {
+  #experience {
+    padding: 3rem 0;
+  }
   #experience .divider {
     margin-left: 0 !important;
   }
@@ -437,21 +428,12 @@ header.masthead .fa-arrow-right {
   }
 }
 
-@media (max-width: 900px) {
-  #experience ul li div {
-    width: 250px;
+@media (min-width: 1280px) {
+  #experience {
+    padding: 3rem 0;
   }
-  #experience ul li:nth-child(even) div {
-    left: -284px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #experience ul li div {
-    width: 350px;
-  }
-  #experience ul li:nth-child(even) div {
-    left: -384px;
+  #experience .divider {
+    margin-left: 15rem !important;
   }
 }
 
@@ -497,6 +479,12 @@ header.masthead .fa-arrow-right {
   #portfolio {
     padding: 2rem 1rem;
   }
+  .portfolio-item {
+    height: 350px;
+  }
+}
+
+@media (max-width: 1280px) {
   .portfolio-item {
     height: 350px;
   }

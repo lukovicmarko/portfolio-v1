@@ -87,14 +87,22 @@ header.masthead {
     }     
     
     #introduction-subtitle{
-        width: 370px;       
-        margin-right: 0 !important;;
+        width: 320px;       
+        margin: 0 !important;;
     }  
 }
 
-@media(max-width: 900px) {  
-    header.masthead {
-        padding: 0 1rem;
-    }
-}
-
+// @media(min-width: 1280px) {  
+//     header.masthead {          
+//         padding:5rem 10rem;     
+//         height: 100%;
+//         .introduction{
+//             margin-top: 4rem;                
+//         }            
+//     }     
+    
+//     #introduction-subtitle{
+//         width: 320px;       
+//         margin: 0 !important;;
+//     }  
+// }
