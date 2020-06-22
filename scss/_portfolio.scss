@@ -1,12 +1,11 @@
 .portfolio{    
     padding: 3rem 15rem;
-    background-color: $dark-grey;
+    background-color: $dark-grey;   
     &-item{
         background-color: $grey-color-light;
         border-radius: 3px;
         height:450px;
-        transition: all .2s;
-
+        transition: all .2s;      
         &:hover{
             transform: translateY(-7px);           
         }
@@ -16,6 +15,8 @@
         }
     }
 }
+
+
 
 .fa-external-link-alt,.fa-github{
     &:hover{
@@ -36,8 +37,7 @@
 
 @media(max-width:900px){
     #portfolio{      
-        padding: 2rem 1rem;     
-       
+        padding: 2rem 1rem;            
     }    
     .portfolio{
         &-item{
@@ -45,12 +45,3 @@
         }
     }
 }
-
-@media(max-width:1280px){ 
-    .portfolio{
-        &-item{
-            height: 350px;
-        }
-    }
-}
-

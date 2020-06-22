@@ -1,5 +1,7 @@
 .social-buttons{
     margin-top: 6rem;
+    opacity: 0;
+    animation: move-in-right-with-scale .7s .8s forwards ease-out;   
     i{
         margin-right: 2rem;
         transition: all .2s;

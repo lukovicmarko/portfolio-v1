@@ -62,6 +62,8 @@
 .nav {
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  animation: showDelay 2s 1.5s forwards ease-out;;
 
   &__wrapper {
     position: fixed;

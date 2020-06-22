@@ -6,6 +6,35 @@ span.wave {
     display: inline-block; 
      
 }
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7,
+.js--wp-8,
+.js--wp-9,
+.js--wp-10{
+  opacity: 0;
+}
+
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated,
+.js--wp-5.animated,
+.js--wp-6.animated,
+.js--wp-7.animated,
+.js--wp-8.animated,
+.js--wp-9.animated,
+.js--wp-10.animated{
+  opacity: 1;
+}
+
+
   
 @keyframes wave-animation {
     0% { transform: rotate(  0.0deg) }
@@ -20,7 +49,54 @@ span.wave {
 
 //grow underline 
 @keyframes underline-animation{
-  to{
-    width: 12%;
+  0%{
+    opacity: 0;  
+  }
+
+  80%{
+    width: 15%;
+  }
+
+  100%{
+    opacity: 1;
+    width: 12%;  
   }
 }
+
+@keyframes showDelay{
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes move-in-right{
+  0%{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+@keyframes move-in-right-with-scale{
+  0%{
+    opacity: 0;
+    transform: translateX(100px) scale(0);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0) scale(1);
+  }
+}
+
+
+
+
+
+
+
